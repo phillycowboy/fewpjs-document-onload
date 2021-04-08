@@ -1,12 +1,7 @@
 // Your code goes here
+document.addEventListener('DOMContentLoaded', () => {
+    let text = document.querySelector('#text');
+    text.textContent = "This is really cool!";
+})
 
-const text = document.getElementById('text')
-
-
-document.addEventListener("DOMContentLoaded", function() {
-   text.innerHTML = "This is really cool!"
-});
-
-console.log(
-    "This console.log() fires when index.js loads - before DOMContentLoaded is triggered"
-)
+// console.log('this loads after?') this will fires first before the DOMContentLoaded
